@@ -397,6 +397,11 @@ footer .foot a.tel:hover{color:var(--accent)}
 .giv-we li::before{background:var(--ink)}
 .giv-biz li::before{background:var(--steel)}
 @media(max-width:820px){.give{grid-template-columns:1fr}}
+
+/* ===== NAPOVNENNIA GROUPS ===== */
+.grp{display:flex;align-items:baseline;gap:12px;margin:38px 0 16px;flex-wrap:wrap}
+.grp-k{font-size:17px;font-weight:800;letter-spacing:-.01em;color:var(--ink)}
+.grp-d{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--steel)}
 </style>
 </head>
 <body>
@@ -487,7 +492,7 @@ footer .foot a.tel:hover{color:var(--accent)}
 
 <section id="idea">
   <div class="wrap">
-    <div class="sec-head rev"><div class="tick"></div><h2>Укриття подвійного призначення</h2><p>Одна споруда — три режими роботи. Не замкнене сховище на 360 днів: щодня потрібна громаді, а в біді — рятує.</p></div>
+    <div class="sec-head rev"><div class="tick"></div><h2>Укриття подвійного призначення</h2><p>Одна споруда — три режими роботи. Не замкнене сховище, а точка 24/7: щодня потрібна громаді, а в біді — рятує.</p></div>
     <div class="modes rev">
       <div class="mode now"><div class="k">Щодня</div><h3>Точка тепла й сервісів</h3><p>Обігрів, кава й чай, вода, зарядка, Wi-Fi, поштомат, банкомат. Місце, де місто збирається.</p></div>
       <div class="mode"><div class="k">Блекаут</div><h3>Енергонезалежний пункт</h3><p>Генератор, сонце й акумулятор, буржуйка як резерв. Тепло, світло і зв'язок, коли темно.</p></div>
@@ -498,20 +503,34 @@ footer .foot a.tel:hover{color:var(--accent)}
 
 <section id="napovnennia">
   <div class="wrap">
-    <div class="sec-head rev"><div class="tick"></div><h2>Що всередині</h2><p>Ядро й постійна присутність — у кожному пункті. Модулі-опції додаються за розміром.</p></div>
+    <div class="sec-head rev"><div class="tick"></div><h2>Що всередині</h2><p>Комплектація ділиться на дві частини: базова — від нас разом із містом; і пропозиція присутності для вашого бізнесу.</p></div>
+
+    <div class="grp rev"><span class="grp-k">Базова комплектація</span><span class="grp-d">що забезпечуємо ми разом із містом</span></div>
     <div class="mods rev">
-      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg><div><div class="t">Енергозабезпечення</div><div class="d">генератор · сонце · акумулятор</div></div></div>
-      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s4 4 4 8a4 4 0 0 1-8 0c0-2 1-3 1-3"/><path d="M12 21c3 0 5-2 5-5"/></svg><div><div class="t">Обігрів</div><div class="d">опалення точки</div></div></div>
-      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 8h11v5a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5z"/><path d="M16 9h2a2 2 0 0 1 0 4h-2"/><path d="M8 3v2M11 2v3"/></svg><div><div class="t">Їжа та напої</div><div class="d">чай · кава · вода</div></div></div>
-      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s6 2 6 3v6c0 4-3 7-6 8-3-1-6-4-6-8V6c0-1 6-3 6-3z"/><rect x="9" y="15" width="6" height="2"/></svg><div><div class="t">Відеонагляд</div><div class="d">нагляд за точкою 24/7</div></div></div>
-      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="9" height="18"/><path d="M14 8h5v13h-5"/><path d="M8 7h3M8 11h3M8 15h3M16 12h1"/></svg><div><div class="t">Буржуйка</div><div class="d">резервне тепло</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg><div><div class="t">Енергозабезпечення</div><div class="d">генератор + резерв</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s4 4 4 8a4 4 0 0 1-8 0c0-2 1-3 1-3"/><path d="M12 21c3 0 5-2 5-5"/></svg><div><div class="t">Обігрів</div><div class="d">тепло в точці</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h11a3 3 0 1 0-3-3"/><path d="M3 12h15a3 3 0 1 1-3 3"/><path d="M3 16h8"/></svg><div><div class="t">Вентиляція</div><div class="d">свіже повітря</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s6 6 6 10a6 6 0 0 1-12 0c0-4 6-10 6-10z"/></svg><div><div class="t">Вода</div><div class="d">питна вода</div></div></div>
       <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 21V10a5 5 0 0 1 10 0v11"/><path d="M9 21v-5a3 3 0 0 1 6 0v5"/><path d="M12 11v3"/></svg><div><div class="t">Туалет</div><div class="d">санвузол</div></div></div>
-      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V6z"/><circle cx="12" cy="10" r="2"/><path d="M8.5 16c.7-1.6 2-2.4 3.5-2.4s2.8.8 3.5 2.4"/></svg><div><div class="t">Працівники ДСНС</div><div class="d">чергування й координація</div></div></div>
-      <div class="mod opt"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18"/><path d="M4 9h16M4 15h16M12 3v18"/><circle cx="8.5" cy="6" r=".6" fill="currentColor"/><circle cx="8.5" cy="12" r=".6" fill="currentColor"/></svg><div><div class="t">Поштомат</div><div class="d">видача посилок</div></div><span class="tag">ОПЦ</span></div>
-      <div class="mod opt"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14"/><rect x="10" y="9" width="8" height="5"/><path d="M6 9h2"/></svg><div><div class="t">Банкомат</div><div class="d">готівка й платежі</div></div><span class="tag">ОПЦ</span></div>
-      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16"/><path d="M12 8v8M8 12h8"/></svg><div><div class="t">Черговий лікар</div><div class="d">перша допомога цілодобово</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10h18"/><path d="M5 10v8"/><path d="M19 10v8"/><path d="M3 14h18"/></svg><div><div class="t">Місця для людей</div><div class="d">де перечекати</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="9" height="18"/><path d="M14 8h5v13h-5"/><path d="M8 7h3M8 11h3M8 15h3"/></svg><div><div class="t">Буржуйка</div><div class="d">резерв тепла</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h11v6H3z"/><path d="M14 9l5-2v8l-5-2"/><circle cx="8.5" cy="10" r="1.5"/></svg><div><div class="t">Відеонагляд</div><div class="d">нагляд 24/7</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V6z"/><circle cx="12" cy="10" r="2"/><path d="M8.5 16c.7-1.6 2-2.4 3.5-2.4s2.8.8 3.5 2.4"/></svg><div><div class="t">Працівники ДСНС</div><div class="d">чергування</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16"/><path d="M12 8v8M8 12h8"/></svg><div><div class="t">Черговий лікар</div><div class="d">перша допомога</div></div></div>
     </div>
-    <p class="mods-note rev"><b>Суцільна рамка</b> — базове наповнення (за громадою), зокрема ДСНС, відеонагляд і черговий лікар · <b>Пунктирна (ОПЦ)</b> — комерційні сервіси, які додає бізнес.</p>
+
+    <div class="grp rev"><span class="grp-k">Пропозиція для бізнесу</span><span class="grp-d">присутність вашого бренду в пункті</span></div>
+    <div class="mods rev">
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14"/><rect x="10" y="9" width="8" height="5"/><path d="M6 9h2"/></svg><div><div class="t">Банкомат</div><div class="d">готівка й платежі</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18"/><path d="M4 9h16M4 15h16M12 3v18"/></svg><div><div class="t">Поштомат</div><div class="d">видача посилок</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 8h11v5a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5z"/><path d="M16 9h2a2 2 0 0 1 0 4h-2"/><path d="M8 3v2M11 2v3"/></svg><div><div class="t">Кав’ярня</div><div class="d">кава на місці</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3v6a2 2 0 0 0 2 2v10"/><path d="M9 3v6"/><path d="M16 3c-1.5 0-2.5 1.5-2.5 3.5S14.5 10 16 10v11"/></svg><div><div class="t">Кафе</div><div class="d">гаряча їжа</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18"/><path d="M8 6h4M8 9h4M8 12h4"/><rect x="14" y="6" width="2" height="6"/><path d="M8 17h8"/></svg><div><div class="t">Вендинг</div><div class="d">снеки й напої</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="8" width="15" height="9"/><path d="M18 11h2v3h-2"/><path d="M10 10l-2 3h3l-2 3"/></svg><div><div class="t">Зарядні станції</div><div class="d">підзарядка</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1 12H7z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><div><div class="t">Точка видачі замовлень</div><div class="d">онлайн-замовлення</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7.5 12.5 12.5 7.5a3.5 3.5 0 0 1 5 5l-5 5a3.5 3.5 0 0 1-5-5z"/><path d="M10 10l4 4"/></svg><div><div class="t">Видача ліків</div><div class="d">аптечний пункт</div></div></div>
+      <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11v2l12 5V6z"/><path d="M15 9a3 3 0 0 1 0 6"/><path d="M6 13v4l3 1"/></svg><div><div class="t">Брендинг</div><div class="d">присутність бренду</div></div></div>
+    </div>
   </div>
 </section>
 
