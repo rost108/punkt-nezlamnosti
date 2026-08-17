@@ -156,8 +156,8 @@ section{padding:66px 0;border-bottom:1px solid var(--line)}
 .mode.now{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 16%,var(--panel)),var(--panel))}
 @media(max-width:760px){.modes{grid-template-columns:1fr}.mode{border-right:0;border-bottom:1px solid var(--line)}.mode:last-child{border-bottom:0}}
 /* ---- modules ---- */
-.mods{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.mod{background:var(--panel);border:1px solid var(--line);padding:18px;display:flex;gap:13px;align-items:flex-start}
+.mods{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.mod{background:var(--panel);border:1px solid var(--line);padding:16px;display:flex;gap:11px;align-items:flex-start}
 .mod svg{flex:0 0 24px;color:var(--ink)}
 .mod .t{font-weight:700;font-size:14.5px}
 .mod .d{color:var(--soft);font-size:12.5px;margin-top:2px}
@@ -165,8 +165,9 @@ section{padding:66px 0;border-bottom:1px solid var(--line)}
 .mod.opt .tag{margin-left:auto;font-family:ui-monospace,monospace;font-size:9.5px;letter-spacing:.14em;color:var(--steel);align-self:flex-start}
 .mods-note{margin-top:14px;font-size:12.5px;color:var(--soft)}
 .mods-note b{color:var(--ink)}
-@media(max-width:900px){.mods{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.mods{grid-template-columns:1fr}}
+@media(max-width:1000px){.mods{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:680px){.mods{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.mods{grid-template-columns:1fr}}
 /* ---- models ---- */
 .models{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .model{background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden}
@@ -399,9 +400,13 @@ footer .foot a.tel:hover{color:var(--accent)}
 @media(max-width:820px){.give{grid-template-columns:1fr}}
 
 /* ===== NAPOVNENNIA GROUPS ===== */
-.grp{display:flex;align-items:baseline;gap:12px;margin:38px 0 16px;flex-wrap:wrap}
-.grp-k{font-size:17px;font-weight:800;letter-spacing:-.01em;color:var(--ink)}
-.grp-d{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--steel)}
+.grp{display:flex;align-items:center;gap:12px;margin:34px 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.sec-head + .grp{margin-top:10px}
+.grp-k{display:inline-flex;align-items:center;gap:9px;font-size:17px;font-weight:800;letter-spacing:-.01em;color:var(--ink)}
+.grp-k::before{content:"";width:9px;height:9px;background:var(--steel);flex:0 0 auto}
+.grp.biz .grp-k::before{background:var(--accent)}
+.grp-d{margin-left:auto;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--steel)}
+@media(max-width:560px){.grp-d{margin-left:0;flex-basis:100%}}
 
 /* ===== HERO PHOTO ===== */
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);min-height:clamp(540px,84vh,880px);display:flex;align-items:center}
@@ -536,7 +541,7 @@ footer .foot a.tel:hover{color:var(--accent)}
       <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16"/><path d="M12 8v8M8 12h8"/></svg><div><div class="t">Черговий лікар</div><div class="d">перша допомога</div></div></div>
     </div>
 
-    <div class="grp rev"><span class="grp-k">Пропозиція для бізнесу</span><span class="grp-d">місце в оренду під ваш сервіс</span></div>
+    <div class="grp rev biz"><span class="grp-k">Пропозиція для бізнесу</span><span class="grp-d">місце в оренду під ваш сервіс</span></div>
     <div class="mods rev">
       <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14"/><rect x="10" y="9" width="8" height="5"/><path d="M6 9h2"/></svg><div><div class="t">Банкомат</div><div class="d">готівка й платежі</div></div></div>
       <div class="mod"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18"/><path d="M4 9h16M4 15h16M12 3v18"/></svg><div><div class="t">Поштомат</div><div class="d">видача посилок</div></div></div>
